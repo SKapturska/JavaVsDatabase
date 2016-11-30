@@ -1,21 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package javavsdatabase;
 
-/**
- *
- * @author Sandi
- */
 public class JavaVsDatabase {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+       SingletonConnection singletonConnection = SingletonConnection.getInstance();
+       //singletonConnection.fillTab(); zmienic id !!!!!!!!
+       Sorting  sorting = new Sorting();
+       System.out.println("czas sortowania sql: " +sorting.sqlSort()+ " nanosekund");
     }
     
 }
