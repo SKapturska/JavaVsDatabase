@@ -35,7 +35,7 @@ public class SingletonConnection {
 
     public void fillTab() {
         Random r = new Random();
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 1000; i < 1500000; i++) {
             try {
                 st.executeUpdate("INSERT INTO tab VALUES("+ i +", "+ r.nextLong() +")");
             } catch (SQLException ex) {
